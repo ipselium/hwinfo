@@ -20,7 +20,7 @@
 #
 #
 # Creation Date : jeu. 19 avril 2018 10:20:20 CEST
-# Last Modified : jeu. 19 avril 2018 10:48:28 CEST
+# Last Modified : jeu. 19 avril 2018 12:20:25 CEST
 """
 -----------
 DOCSTRING
@@ -62,4 +62,4 @@ class cpuinfo:
         return len(_count.findall(self.cpu))
 
     def __str__(self):
-        return '{} | Cache : {} | Threads : {}'.format(self.model, self.cache, self.count)
+        return 'Cpu Model : {}\nCache : {}\nThreads : {}'.format(self.model, self.cache, self.count)
